@@ -1,8 +1,8 @@
 # File	   : Bzip2.pm
 # Author   : Rob Janes
 # Created  : 14 April 2005
-# Modified : 9 Aug 2005
-# Version  : 2.09
+# Modified : 2013-03-25 17:35:13 rurban
+# Version  : 2.10
 #
 #     Copyright (c) 2005 Rob Janes. All rights reserved.
 #     This program is free software; you can redistribute it and/or
@@ -130,7 +130,7 @@ $EXPORT_TAGS{'all'} = [ @EXPORT_OK ];
 
 our @EXPORT = ( @{ $EXPORT_TAGS{'utilities'} }, @{ $EXPORT_TAGS{'constants'} } );
 
-our $VERSION = "2.09";
+our $VERSION = "2.10";
 
 our $bzerrno = "";
 our $gzerrno;
@@ -741,8 +741,6 @@ I<bzip2> files. Unfortunately, most of them are not suitable.  So, this
 module provides another interface, built over top of the low level bzlib
 methods.
 
-=over 5
-
 =head2 B<$bz = bzopen(filename or filehandle, mode)>
 
 This function returns an object which is used to access the other
@@ -754,6 +752,9 @@ opened for reading or writing, with "r" or "w" respectively.
 If a reference to an open filehandle is passed in place of the
 filename, it better be positioned to the start of a
 compression/decompression sequence.
+
+WARNING: With Perl 5.6 you cannot use a filehandle because of
+SEGV in destruction with bzclose or an implicit close.
 
 =head2 B<$bz = Compress::Bzip2-E<gt>new( [PARAMS] )>
 
@@ -915,7 +916,10 @@ I<an> error in numeric context. Use B<bzerror()> to check for specific
 I<bzlib> errors. The I<bzcat> example below shows how the variable can
 be used safely.
 
-=back
+=head2 B<$bz-E<gt>prefix>
+
+Returns the additional 5 byte header which is prepended to the bzip2
+header  starting with C<BZh> when using memBzip/compress.
 
 =head1 Compress::Bzip2 1.03 COMPATIBILITY
 
@@ -924,12 +928,10 @@ came to a head at 1.03.  The 1.03 version worked with bzlib 1.0.2, had
 improvements to the error handling, single buffer inflate/deflate, a
 streaming interface to inflate/deflate, and a cpan style test suite.
 
-=over 5
-
 =head2 B<$dest = compress( $string, [$level] )>
 
 Alias to memBzip, this compresses string, using the optional
-compression level, 1 through 9, the default being 1.  Returns a string
+compression level, 1 through 9, the default being 6.  Returns a string
 containing the compressed data.
 
 On error I<undef> is returned.
@@ -980,8 +982,6 @@ Alias to total_in.  Total bytes passed to the stream.
 
 Alias to total_out.  Total bytes received from the stream.
 
-=back
-
 =head1 GZIP COMPATIBILITY INTERFACE
 
 Except for the exact state and error numbers, this package presents an
@@ -1005,8 +1005,6 @@ to
 
 Some of the Compress::Zlib aliases don't return anything useful, like
 crc32 or adler32, cause bzip2 doesn't do that sort of thing.
-
-=over 5
 
 =head2 B< $gz = gzopen( $filename, $mode ) >
 
@@ -1102,29 +1100,25 @@ Alias for memBzip.
 
 Alias for memBunzip.
 
-=back
-
 =head1 IN-MEMORY COMPRESS/UNCOMPRESS
 
 Two high-level functions are provided by I<bzlib> to perform in-memory
 compression. They are B<memBzip> and B<memBunzip>. Two Perl subs are
 provided which provide similar functionality.
 
-=over 5
-
 =head2 B<$compressed = memBzip($buffer);>
 
-Compresses B<$source>. If successful it returns the compressed
+Compresses B<$buffer>. If successful it returns the compressed
 data. Otherwise it returns I<undef>.
 
 The buffer parameter can either be a scalar or a scalar reference.
 
 Essentially, an in-memory bzip file is created. It creates a minimal
-bzip header.
+bzip header, which adds 5 bytes before the bzip2 specific BZh header.
 
 =head2 B<$uncompressed = memBunzip($buffer);>
 
-Uncompresses B<$source>. If successful it returns the uncompressed
+Uncompresses B<$buffer>. If successful it returns the uncompressed
 data. Otherwise it returns I<undef>.
 
 The source buffer can either be a scalar or a scalar reference.
@@ -1132,8 +1126,6 @@ The source buffer can either be a scalar or a scalar reference.
 The buffer parameter can either be a scalar or a scalar reference. The
 contents of the buffer parameter are destroyed after calling this
 function.
-
-=back
 
 =head1 STREAM DEFLATE 
 
@@ -1297,13 +1289,13 @@ I<bzlib.h> error code.
 The function optionally takes a number of named options specified as
 C<-Name=E<gt>value> pairs. This allows individual options to be
 tailored without having to specify them all in the parameter list.
- 
+
 For backward compatibility, it is also possible to pass the parameters
 as a reference to a hash containing the name=>value pairs.
- 
+
 The function takes one optional parameter, a reference to a hash.  The
 contents of the hash allow the deflation interface to be tailored.
- 
+
 Here is a list of the valid options:
 
 =over 5
@@ -1379,8 +1371,6 @@ Here is an example of using B<bzinflate>.
 
 Here are some example scripts of using the interface.
 
-=over 5
-
 =head2 B<A bzcat function>
 
   use strict ;
@@ -1454,8 +1444,6 @@ output.
   }
 
   $bz->bzclose ;
-
-=back
 
 =head1 EXPORT
 

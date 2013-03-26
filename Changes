@@ -103,3 +103,29 @@ in a lot of places.
 
    - prototype error for bzwrite, limit variable was not optional, thanks
      to Christian Drauch for pointing this out.
+
+2.10 2013-03-25 rurban
+   - updated bzlib-src from 1.0.2 to 1.0.6
+   - [cpan #82308] make breaks on 5.17.7 by schubiger
+   - [cpan #21961] update ppport.h
+   - [cpan #25002] memBzip() ignores level
+     keep using default 6, but honor optional level argument
+   - use -std=c89 on gcc compat compilers
+   - fix -Wimplicit-int warning for show_bzversion main()
+   - fix a couple if dangling else corner cases
+     format string errors, and unused variables.
+   - [cpan #82576] fix pod formatting errors
+   - [cpan #48128] support memBunzip BZh header w/o extra size prefix
+     and grow dest buf dynamically. Tests in t/040-memory.t
+   - [cpan #40741] fix bzreadline blocked on the broken bz2 files
+   - [cpan #84223] fix ignored bzinflateInit args
+   - [cpan #48124] Multiple issues with bzinflate
+     support PV ref as bzinflate() buffer arg as documented.
+     support status checks in chunked bzinflate() calls. t/060-inflate.t
+   - [cpan #49618] fix for win32 nmake + gcc
+   - fix t/041-error.t bzopen does not work with filehandles with 5.6,
+     global destruction of IO::Handle mixed up with a socket
+   - [cpan #36246] compress 0-byte srcfiles correctly. by Jeffrey Ratcliffe.
+     fixes debian bug 464205
+   - [cpan #28366] added testcase for double free or corruption on 32 bit, threaded
+     but could not repro it.
