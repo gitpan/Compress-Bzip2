@@ -1,0 +1,134 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 321030dcade0d87dba537aff99fcba66230971d0 ANNOUNCE
+SHA1 d8094d7a2ccce1ff3a3fc69a76c73dd15291cc65 Bzip2.xs
+SHA1 ff8688f52f05aa77ac2522c7970e6ab23bf77d0e COPYING
+SHA1 8c727b80a8dda2bace1fefffd77b1f9f20629631 Changes
+SHA1 06186a4d62ebec3ffac9a4f5457458436d7302c5 INSTALL
+SHA1 dd1e07a034c254f94c1ee14562aeac83a653d3b1 MANIFEST
+SHA1 6e6f58fc874d414870ab5e2e2ed367df38c4e934 META.json
+SHA1 dbcb26611acb2fcd584074ffffc4ba93cd88c792 META.yml
+SHA1 11b0b24aaf85130d5df5202d734f42fd66f4ba4b Makefile.PL
+SHA1 01ca12f980ac0675ebc82d84c432bbf3be80c74c NEWS
+SHA1 29150767f937349476e535058519683813ddd965 README
+SHA1 6bdb898b814cca277ba465b15a14eb50bc458ea8 bzlib-src/CHANGES
+SHA1 1c0c6888759a63c32bca7eb63353af2cd9bd5d9e bzlib-src/LICENSE
+SHA1 ec798819dffc496d45bab5ee665eabcc6b141c5d bzlib-src/Makefile.PL
+SHA1 b41223acdf4c8dce0efe36f8ca6120279a5123f9 bzlib-src/README
+SHA1 de3d5e3d0f1d7e31453aaf64519e72e5dd8ecdc0 bzlib-src/README.COMPILATION.PROBLEMS
+SHA1 e79f18f261d55954370b71e182912945a055e764 bzlib-src/README.XML.STUFF
+SHA1 db8f69d77438d91b741b378a13a71864501fe7e3 bzlib-src/blocksort.c
+SHA1 51b99fe4dc8b8920f3d0b74fe98b4c41869fb986 bzlib-src/bz-common.xsl
+SHA1 76bab526da329c42354c8b6ccebbeb89fb7e9ff9 bzlib-src/bz-fo.xsl
+SHA1 74a907fba29447848e3e5bad7ea12a874009d735 bzlib-src/bz-html.xsl
+SHA1 b18f2c881197ae12beeea03f26b85ce3ec875a42 bzlib-src/bzdiff
+SHA1 0cc1976289e55d6c40ab1d88f267ac4fc022de5e bzlib-src/bzdiff.1
+SHA1 500ea98094773c3ac10a76009c34f194c9ff2aea bzlib-src/bzgrep
+SHA1 843531af184781714704afd2d178d346e9cab598 bzlib-src/bzgrep.1
+SHA1 a8f0ca26dbd1225c1e2e4f8b44a702ae80bd0d40 bzlib-src/bzip.css
+SHA1 1d962d7c6b2bd19375a5a77e578ac31107903cde bzlib-src/bzip2.1
+SHA1 cc930d80b3c4e2e3b40e8426c2fe88a88fe70ff4 bzlib-src/bzip2.c
+SHA1 c2088c32c907c810232cf003cad3bc1bc8a1cf9d bzlib-src/bzip2.txt
+SHA1 1d18e977baf4bdc9644971337b1c42940977bac8 bzlib-src/bzip2recover.c
+SHA1 177e58fa3fd679e6fb0857a721544027cc6adb58 bzlib-src/bzlib.c
+SHA1 ecf2bf4d8165c2bf1a6b2e79bd518b8cf0299e84 bzlib-src/bzlib.h
+SHA1 8978252192f6bfcd44bca18f0b4b79f5ec21edda bzlib-src/bzlib_private.h
+SHA1 565f7e9a4db0aa84738983ed1172dfd0e5d294cc bzlib-src/bzmore
+SHA1 7b159165532953ecb33df5871f109cd14a4c7ad0 bzlib-src/bzmore.1
+SHA1 09d3250d5efd2cb0ac7c6ffa969f745bdd5b1c74 bzlib-src/c-Makefile
+SHA1 d479b32cbeef7dbfebb208161e8cc37f6d203ab3 bzlib-src/c-Makefile-libbz2_so
+SHA1 deda4257732b0d0cfeca6ebdf48d71b1d731c5f5 bzlib-src/compress.c
+SHA1 325261f6a3878485c0e27a79813ff3422df51558 bzlib-src/crctable.c
+SHA1 3d71b6683d4bbc7d99d483a6cc43c86a9366a63c bzlib-src/decompress.c
+SHA1 58511454fd9d976efa258320bc8987b534f703ab bzlib-src/entities.xml
+SHA1 af12214c7d1c1839b69a40eedb9feac7a2c1c8bd bzlib-src/fixup-bzlib-src
+SHA1 6ff08c4ad41042299842219bdc62c250a9e5fca3 bzlib-src/format.pl
+SHA1 6b42d52024a6acb861863d87b2d55978cdbf721c bzlib-src/huffman.c
+SHA1 ea8ce6770c0688fa18ade3894e6f89e8e9c143c8 bzlib-src/manual.html
+SHA1 2241eff0617639a117c1f83c1b0d89153987b54e bzlib-src/manual.pdf
+SHA1 bc0ee799e542d37603410def7811e943f8ed4e73 bzlib-src/manual.ps
+SHA1 184b71e636a5178b995c2beb87e31a9537c149df bzlib-src/manual.xml
+SHA1 89fb42215d05a4ebebb7cf9babdeeb3dcdd24fbf bzlib-src/randtable.c
+SHA1 615373264ac3957a429a7f73ef785244be454e25 bzlib-src/sample0.bz2
+SHA1 c384573b665039428e91a0449ceef15edf6c483b bzlib-src/sample0.ref
+SHA1 5a40301f7848aa4a8032f6c73f396fe4fbabbf58 bzlib-src/sample1.bz2
+SHA1 f9424e7063d5af685875e8235a5f732109a797a2 bzlib-src/sample1.ref
+SHA1 c718455e05337503df1fa3590a70bcd39e454ab1 bzlib-src/sample2.bz2
+SHA1 03c7807ac7139d2fe64c2a9bad01eb046482be2d bzlib-src/sample2.ref
+SHA1 02d5c1eb8bbe2c7853cbeb4f5342a90b4d1d9b21 bzlib-src/sample3.bz2
+SHA1 77871348050d28bcd471d88e69cf7b7b74b992ef bzlib-src/sample3.ref
+SHA1 266b6987259c2466efbe93db4ff5c23193dd9d87 bzlib-src/t/01-baseline.t
+SHA1 5c6d21d35df3d9b6b26dee674cc4fa4a391490b8 bzlib-src/t/lib.pl
+SHA1 c36aae3e14d1e481db138b77f1f85ff50da50db1 bzlib-src/tst-mk251.c
+SHA1 bc729450a9fa0410bf1b9ddeac93f8df4d981f9b bzlib-src/tst-spewG.c
+SHA1 26564bac7cc571a57d04941fd017afdc144b9be5 bzlib-src/tst-unzcrash.c
+SHA1 3afe0774b9d351ac07e66e6f5ec0492e4333375c bzlib-src/win-libbz2.def
+SHA1 335e704b98f50cc9526b12ce5cec2f286051a312 bzlib-src/win-libbz2.dsp
+SHA1 27f8c82b02cfb149cbf49742237946c562bec1db bzlib-src/win-makefile.msc
+SHA1 a0fa4547db29c7128475129707220ca32dda6d4a bzlib-src/win-tst-dlltest.c
+SHA1 4d860f30c3e79484b6fb023791546def1fb21542 bzlib-src/win-tst-dlltest.dsp
+SHA1 40fb550a6bdf9c47e46e931ef79745959bf2f46b bzlib-src/words0
+SHA1 a1ed6f79912176a1ad57283168c2fc22b49693b0 bzlib-src/words1
+SHA1 4510f8fc12f41462f2a144a04b7f0582c8abe77b bzlib-src/words2
+SHA1 46d4aca09ef74ad869876d8f6880f1a5eb7c08f9 bzlib-src/words3
+SHA1 b7413608a39898b0e9f5009e2f32ad7e3356956d bzlib-src/xmlproc.sh
+SHA1 7dfc2194e9b344251a52ae5b6399fb1650342905 config.in
+SHA1 f51e8905cd4c7ac9abe672ead1f8a52b82fbbad5 fallback/const-c.inc
+SHA1 340a622d47ec2642d9631c79432f1c234a6c8c84 fallback/const-xs.inc
+SHA1 f1911ea24f651d1959394334fa4e526073d8b9bf lib/Compress/Bzip2.pm
+SHA1 fb7154b5f5ab3dd33064a2a1ac704f596dc6449a ppport.h
+SHA1 f5620dc7bc334bd571a5bceb7012cc11114cccff show_bzversion.c
+SHA1 4dd4bbbd10e755857ed1ca2beabfa6410c8ef2ca t/010-useability.t
+SHA1 ba3c2eaa8523fdec68b5c3f5d937966724361a2c t/011-prototype.t
+SHA1 9eed01621a2e74e10fb8ded75e903e9b7df2774f t/020-compfile.t
+SHA1 8f11b10ea576304312aaa30f9d58dcbf71224cff t/021-compfile.t
+SHA1 c2e7be866fef35192842abb4a2c1a8318a9a288e t/022-compfile.t
+SHA1 1e95e8e6bfbca05ed3203dc28a11a6f0f2fb074f t/023-compfile.t
+SHA1 6c10e809c33334e9ae037e6d66cadfa11e13ec9e t/024-compfile.t
+SHA1 6d60bcc45e1afe4e5a4b32cb8d2bd5834a5a9358 t/025-compfile.t
+SHA1 18536e0bcdfe23e9e41bf9ea39b97f8eaf409ecc t/026-compfile.t
+SHA1 dc332bc8c722f9bd141fb76c7b2c600f2ba31613 t/030-uncompfile.t
+SHA1 d67f7ef4de9edceaa318b7f541c9ac310205825c t/031-uncompfile.t
+SHA1 02ec9f90fb677eb3da78b331378dab9fce3d5ad6 t/032-uncompfile.t
+SHA1 2597ec2a8bcd334e4053dcc19e72896e91c58576 t/033-uncompfile.t
+SHA1 08e4ed8e40f3ed1d5f3f41785e8e3a122625d8d0 t/034-uncompfile.t
+SHA1 1aa271f113f1ae2051cbe226a25c6c0c2b1d10f1 t/035-uncompreadline.t
+SHA1 9e61a17fd8d6ec27e21e19e40f07813e3af11e75 t/040-memory.t
+SHA1 ea1ba45ac58032fa16d6400f5a5d41b1b282d965 t/041-double-free.t
+SHA1 e6f5ae05cdd049ef260b49545db04491c0fc2583 t/041-error.t
+SHA1 9a0c805e46ac78934988b63f462b383df7202d75 t/050-deflate.t
+SHA1 10db2011565f04dedc1a207a4a32d5f2aecc7fe3 t/051-deflate-flush.t
+SHA1 619e2cbebb73bc149d73faa1dfbd8252faf17550 t/060-inflate.t
+SHA1 70a30838176188b2f893997d424deb1176403bf9 t/070-gzcomp.t
+SHA1 8b048b1a35dd9c83ac116bfb0c62fccff8909273 t/071-gzuncomp.t
+SHA1 51c2260d728eb8feac05fc2dad13ac45f9c5f1db t/080-version.t
+SHA1 59a46cac15f6e1e05b4fa719f7944b8b1b83f0a6 t/081-basic.t
+SHA1 5b6cd3c144afeb67a6b6c61389fb273d55a1ac1a t/082-stream.t
+SHA1 a68085c94808f024eb2ed76ce73ea439f0ed6d48 t/900_kwalitee.t
+SHA1 993b3cef8c06a70d99829facf76140864eb57240 t/900_meta.t
+SHA1 1ce51bd4ebcb568ddd166c32d5dbb57ff2d0b515 t/900_perl_minimum_version.t
+SHA1 5a990b001a5599a8698961e0edfbf4f729795ef9 t/900_pod-coverage.t
+SHA1 8e6c77dd1d7e2bb99d62e199e1b19b6090e405f5 t/900_pod.t
+SHA1 077f749e333cf769d4acf2a025060360b090ea96 t/lib.pl
+SHA1 d247f2120895e2fdcd1ea6e65bab1a1f68c06714 typemap
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iEYEARECAAYFAlFZsGMACgkQmm2SYo/9yUJ0fACfQxlq6Yo0xO43AtMmlC6SWk3A
+36gAn2yu078PtbPYboYsc636wVYT4qqh
+=Sxkn
+-----END PGP SIGNATURE-----

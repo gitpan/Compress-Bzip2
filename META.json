@@ -6,7 +6,7 @@
    "dynamic_config" : 1,
    "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921",
    "license" : [
-      "unknown"
+      "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -31,6 +31,11 @@
          }
       },
       "runtime" : {
+         "recommends" : {
+            "Compress::Raw::Bzip2" : "2.060",
+            "Compress::Zlib" : "1.19",
+            "IO::Compress::Bzip2" : "2.060"
+         },
          "requires" : {
             "Carp" : "0",
             "Config" : "0",
@@ -43,5 +48,13 @@
       }
    },
    "release_status" : "stable",
-   "version" : "2.11"
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "https://github.com/rurban/Compress-Bzip2"
+      }
+   },
+   "version" : "2.12"
 }
