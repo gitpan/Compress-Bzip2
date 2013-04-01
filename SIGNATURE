@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -17,11 +17,11 @@ Hash: SHA1
 SHA1 321030dcade0d87dba537aff99fcba66230971d0 ANNOUNCE
 SHA1 d8094d7a2ccce1ff3a3fc69a76c73dd15291cc65 Bzip2.xs
 SHA1 ff8688f52f05aa77ac2522c7970e6ab23bf77d0e COPYING
-SHA1 8c727b80a8dda2bace1fefffd77b1f9f20629631 Changes
+SHA1 6ceca3c7a7e9cb28f26b7f8b84e17d6a32c6e76b Changes
 SHA1 06186a4d62ebec3ffac9a4f5457458436d7302c5 INSTALL
 SHA1 dd1e07a034c254f94c1ee14562aeac83a653d3b1 MANIFEST
-SHA1 6e6f58fc874d414870ab5e2e2ed367df38c4e934 META.json
-SHA1 dbcb26611acb2fcd584074ffffc4ba93cd88c792 META.yml
+SHA1 4d4db68152883fb4a7fbdd3543749d5113184beb META.json
+SHA1 f39fe45af58faf289c289876d6ccff83a56033a1 META.yml
 SHA1 11b0b24aaf85130d5df5202d734f42fd66f4ba4b Makefile.PL
 SHA1 01ca12f980ac0675ebc82d84c432bbf3be80c74c NEWS
 SHA1 29150767f937349476e535058519683813ddd965 README
@@ -89,7 +89,7 @@ SHA1 b7413608a39898b0e9f5009e2f32ad7e3356956d bzlib-src/xmlproc.sh
 SHA1 7dfc2194e9b344251a52ae5b6399fb1650342905 config.in
 SHA1 f51e8905cd4c7ac9abe672ead1f8a52b82fbbad5 fallback/const-c.inc
 SHA1 340a622d47ec2642d9631c79432f1c234a6c8c84 fallback/const-xs.inc
-SHA1 f1911ea24f651d1959394334fa4e526073d8b9bf lib/Compress/Bzip2.pm
+SHA1 fd1444f5784638e66533b71636a0e8a2d43f4076 lib/Compress/Bzip2.pm
 SHA1 fb7154b5f5ab3dd33064a2a1ac704f596dc6449a ppport.h
 SHA1 f5620dc7bc334bd571a5bceb7012cc11114cccff show_bzversion.c
 SHA1 4dd4bbbd10e755857ed1ca2beabfa6410c8ef2ca t/010-useability.t
@@ -121,14 +121,14 @@ SHA1 5b6cd3c144afeb67a6b6c61389fb273d55a1ac1a t/082-stream.t
 SHA1 a68085c94808f024eb2ed76ce73ea439f0ed6d48 t/900_kwalitee.t
 SHA1 993b3cef8c06a70d99829facf76140864eb57240 t/900_meta.t
 SHA1 1ce51bd4ebcb568ddd166c32d5dbb57ff2d0b515 t/900_perl_minimum_version.t
-SHA1 5a990b001a5599a8698961e0edfbf4f729795ef9 t/900_pod-coverage.t
+SHA1 5d64c28fbb2d9eb5e649ac42f594d7bde8ef31e7 t/900_pod-coverage.t
 SHA1 8e6c77dd1d7e2bb99d62e199e1b19b6090e405f5 t/900_pod.t
 SHA1 077f749e333cf769d4acf2a025060360b090ea96 t/lib.pl
 SHA1 d247f2120895e2fdcd1ea6e65bab1a1f68c06714 typemap
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1.4.13 (Darwin)
 
-iEYEARECAAYFAlFZsGMACgkQmm2SYo/9yUJ0fACfQxlq6Yo0xO43AtMmlC6SWk3A
-36gAn2yu078PtbPYboYsc636wVYT4qqh
-=Sxkn
+iEYEARECAAYFAlFZxE4ACgkQmm2SYo/9yUKAJQCfVmyQ+v1z5sP4ZFtoIjxLGa+2
+hREAnReQ0HGl6JKNDQoi0e7eA6VhnQfV
+=UfgV
 -----END PGP SIGNATURE-----
