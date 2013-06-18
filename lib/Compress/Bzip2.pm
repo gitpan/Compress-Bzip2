@@ -1,8 +1,8 @@
 # File	   : Bzip2.pm
 # Author   : Rob Janes
 # Created  : 14 April 2005
-# Modified : 2013-04-05 09:56:15 rurban
-# Version  : 2.15
+# Modified : 2013-06-18 11:08:30 rurban
+# Version  : 2.16
 #
 #     Copyright (c) 2005 Rob Janes. All rights reserved.
 #     This program is free software; you can redistribute it and/or
@@ -12,7 +12,7 @@
 package Compress::Bzip2;
 
 use 5.006;
-our $VERSION = "2.15";
+our $VERSION = "2.16";
 use strict;
 use warnings;
 
@@ -1573,7 +1573,7 @@ F<azemgi@rupert.informatik.uni-stuttgart.de>.  It provided an
 interface to the in memory inflate and deflate routines.
 
 I<Compress::Bzip2> was subsequently passed on to Marco Carnut
-F<kiko@tempest.com.br> who shepharded it through to version 1.03, a
+F<kiko@tempest.com.br> who shepherded it through to version 1.03, a
 set of changes which included upgrades to handle bzlib 1.0.2, and
 improvements to the in memory inflate and deflate routines.  The
 streaming interface and error information were added by David Robins
