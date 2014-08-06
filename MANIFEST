@@ -5,6 +5,8 @@ COPYING
 INSTALL
 ANNOUNCE
 NEWS
+META.json
+META.yml
 Makefile.PL
 config.in
 ppport.h
@@ -107,6 +109,4 @@ t/900_meta.t
 t/900_perl_minimum_version.t
 t/900_pod-coverage.t
 t/900_pod.t
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
 SIGNATURE                                Public-key signature (added by MakeMaker)
