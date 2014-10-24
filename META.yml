@@ -33,4 +33,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/rurban/Compress-Bzip2
-version: '2.18'
+version: '2.19'
